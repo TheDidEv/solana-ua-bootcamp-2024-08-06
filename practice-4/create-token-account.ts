@@ -8,7 +8,7 @@ import {
 } from "@solana/web3.js";
 import { getOrCreateAssociatedTokenAccount } from "@solana/spl-token";
 
-let privateKey = "[12,248,82,98,70,64,247,249,102,120,150,8,66,251,201,73,194,230,75,14,108,62,238,242,169,83,213,88,211,44,215,236,189,141,170,234,53,21,86,43,145,87,4,52,53,206,205,225,213,186,224,226,106,191,55,78,99,127,166,152,120,10,189,159]";
+let privateKey = "privateKey";
 if (privateKey === undefined) {
   console.log("Add SECRET_KEY to .env!");
   process.exit(1);
@@ -23,9 +23,9 @@ console.log(
 );
 
 const tokenMintAccount = new PublicKey(
-    "Address that create-token-mint.tx created for you"
+    "JA5aA6ANKK6i787bv4fv8TPBAC9BA6GJLZrn7JU1N4ix"
   );
-  const recipient = new PublicKey("CHOOSE A RECIPIENT");
+  const recipient = new PublicKey("DkwM6U3X1mdauvJMLndCo6fJqThPyqzydPTGcF2D4UcE");
   
   const tokenAccount = await getOrCreateAssociatedTokenAccount(
     connection,
